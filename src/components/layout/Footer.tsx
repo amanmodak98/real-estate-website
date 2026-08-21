@@ -229,6 +229,7 @@ export default function Footer() {
             <p style={{ color: '#94a3b8', fontSize: '14px', margin: 0 }}>
               © {currentYear} Prestige Realty Group. All rights reserved.
             </p>
+            <p style={{ color: '#94a3b8', fontSize: '14px', margin: 0 }}>Designed &amp; Developed by <a href="https://www.infirexa.tech" target="_blank" rel="noopener noreferrer">Infirexa</a></p>
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
               {['Privacy Policy', 'Terms of Service', 'Fair Housing'].map((item) => (
                 <a

@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
+import { Variants, motion, AnimatePresence } from 'framer-motion'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -235,7 +235,7 @@ const LOCATION_OPTIONS: LocationOption[] = [
 
 // ── Animation variants ────────────────────────────────────────────────────────
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -243,7 +243,7 @@ const containerVariants = {
   },
 }
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 32 },
   visible: {
     opacity: 1,
@@ -257,7 +257,7 @@ const cardVariants = {
   },
 }
 
-const heroVariants = {
+const heroVariants: Variants = {
   hidden: { opacity: 0, y: -20 },
   visible: {
     opacity: 1,
@@ -266,7 +266,7 @@ const heroVariants = {
   },
 }
 
-const sidebarVariants = {
+const sidebarVariants: Variants = {
   hidden: { opacity: 0, x: -24 },
   visible: {
     opacity: 1,
